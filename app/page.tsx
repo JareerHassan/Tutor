@@ -5,6 +5,7 @@ import Features from "../src/components/home/SmartFeature"
 import Tutors from "../src/components/home/Tutor"
 import Selfs from "../src/components/home/Self"
 import Crousals from "../src/components/home/Crousal"
+import Testimonials from "../src/components/home/Testimonial"
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
       <Tutors />
       <Selfs />
       <Crousals />
-
+   <Testimonials />
     </div>
   );
 }
