@@ -33,15 +33,23 @@ const Features = () => {
 
 
             {/* --- SECTION 2: HOW IT WORKS --- */}
-            <div className=" mx-auto  px-4 sm:px-6 lg:px-10 py-16">
+            <div className=" mx-auto  px-4 sm:px-6 lg:px-10 py-8">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-semibold text-gray-900 mb-3 tracking-tight">Smart Features That Set Us Apart</h2>
+                    <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+">Smart Features That Set Us Apart</h2>
                     <p className="text-gray-500 text-sm md:text-base font-medium">
                         Experiencing the future of tutors and caregivers searching with our advanced technology and secure platform
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -56,7 +64,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">
                                     Smart Matching
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
@@ -69,7 +86,7 @@ const Features = () => {
                 </div>
 
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -78,8 +95,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                                    Protected Payments
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">                                    Protected Payments
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
                                     All payments are securely held in escrow until the session is complete - so clients stay protected and tutors and caregivers get guaranteed, on-time payouts with zero hassle        </p>
@@ -96,7 +121,7 @@ const Features = () => {
                 </div>
 
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -111,8 +136,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                                    Secure Communication
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">                                    Secure Communication
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
                                     Chat with total confidence using end-to-end encrypted messaging that protects your privacy - then share files, images, and documents securely in one trusted space                                </p>
@@ -124,7 +157,7 @@ const Features = () => {
 
 
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -133,8 +166,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                                    Background Check
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">                                    Background Check
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
                                     Every verified tutor or caregiver uploads a government-issued ID and completes facial-recognition verification. Clients can also request background checks directly in the platform.                                </p>
@@ -153,7 +194,7 @@ const Features = () => {
 
 
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -168,8 +209,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                                    Virtual White Board
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">                                    Virtual White Board
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
                                     Our virtual whiteboard makes learning interactive and clear—collaborate in real time with drawings, notes, and problem-solving tools that keep every session engaging and easy to follow.                                </p>
@@ -181,7 +230,7 @@ const Features = () => {
 
 
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
                     <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
 
                         {/* IMAGE */}
@@ -190,8 +239,16 @@ const Features = () => {
                         {/* TEXT */}
                         <div className="flex-1">
                             <div className="text-center md:text-start">
-                                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-                                    Video Conferencing Technology
+                                <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+  tracking-tight
+">                                    Video Conferencing Technology
                                 </h2>
                                 <p className="text-gray-500 text-sm md:text-base font-medium">
                                     Our built-in video conferencing delivers secure, crystal-clear calls so you can connect face-to-face with confidence—making every session smoother, more engaging, and more effective from anywhere.                                </p>
@@ -214,8 +271,8 @@ const Features = () => {
 
             {/* --- SECTION 3: BIG SALE BANNER --- */}
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-                <div className="relative roots rounded-3xl p-8 md:p-12 overflow-hidden shadow-xl h-[300px]">
+            <div >
+                <div className="relative roots  p-8 md:p-12 overflow-hidden shadow-xl h-[300px]">
 
                     {/* Content */}
                     <div className="relative z-10 flex flex-col justify-center items-center h-full gap-6 text-center">

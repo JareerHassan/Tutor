@@ -26,7 +26,16 @@ const Tutors = () => {
             {/* Existing Tutors Section */}
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-semibold text-gray-900 mb-3 leading-[1.3]">
+                    <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+
+">
                         Your next Generation of Tutors, <br /> Babysitters, and House care Await
                     </h2>
                     <p className="text-gray-500 text-sm md:text-base font-medium">
@@ -70,7 +79,15 @@ const Tutors = () => {
             {/* New Section - World Class Virtual Learning Platform */}
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-16">
                 <div className="text-start mb-12">
-                    <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+                               <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-6 
+  md:mb-8 
+">
                         Our World Class Virtual Learning Platform
                     </h2>
                 </div>

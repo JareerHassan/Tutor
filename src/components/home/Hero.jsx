@@ -17,20 +17,32 @@ const HeroSection = () => {
   const avatars = [Pic3, Pic4, Pic5, Pic6, Pic7];
 
   return (
-    <section className="relative bg-white py-12 lg:py-24 overflow-hidden">
+    <section className="relative bg-white py-14  overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
 
           {/* --- LEFT SIDE: TEXT & SEARCH --- */}
           <div className="z-10">
-            <span className="text-[#C79719] text-xs font-bold tracking-widest uppercase mb-4 block">
+            <span className="text-[#C79719]  bg-[#F9F5E880] inline-block text-xs font-bold tracking-widest rounded-full uppercase mb-4 px-3 py-1 block">
               Tutors and Care Available
             </span>
 
-            <h1 className="text-5xl  font-semibold text-[#1c1c1c] leading-[1.1] mb-6">
+            <h1 className="
+  text-3xl 
+  sm:text-4xl 
+  md:text-5xl 
+  font-semibold 
+  text-[#1c1c1c] 
+  leading-tight 
+  md:leading-[1.1] 
+  mb-4 
+  md:mb-6
+">
               Your Search For <span className="text-[#FC040B]">Tutors</span>
-              <span className="text-[#C79719]"> & Caregivers</span> Begins & <br /> Ends Here
+              <span className="text-[#C79719]"> & Caregivers</span> Begins & <br className="hidden md:block" />
+              Ends Here
             </h1>
+
 
             <p className="text-gray-400 text-sm md:text-base max-w-lg mb-8 leading-relaxed">
               Connecting students and parents with tutors who care, support, and inspire on one safe, secure platform enriched with modern technologies and AI tools to support meaningful learning.
@@ -116,8 +128,8 @@ const HeroSection = () => {
             {/* 1. Red Circle - Positioned Top-Right Behind */}
 
             {/* 2. Main Image Container - Specific U-Shape */}
-            <div className="relative z-10">
-              <div className="w-[300px] h-[320px] md:w-[440px] md:h-[460px] overflow-hidden rounded-t-[40px] rounded-b-[220px]  relative">
+            <div className="relative z-10 mr-3">
+              <div className="w-[320px] h-[320px] md:w-[450px] md:h-[450px] overflow-hidden rounded-t-[40px] rounded-b-[220px]  relative">
                 <Image
                   src={Pic}
                   alt="Student"

@@ -52,7 +52,15 @@ const Selfs = () => {
         <>
             <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-sans">
                 {/* Main Heading */}
-                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 md:mb-8">
+                  <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-6 
+  md:mb-8 
+">
                     Free SAT Prep (Self-Paced and Self-service)
                 </h2>
 
@@ -94,7 +102,15 @@ const Selfs = () => {
 
             <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-sans">
                 {/* Main Heading */}
-                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6 md:mb-8">
+                  <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-6 
+  md:mb-8 
+">
                     Free ACT Prep (Self-Paced and Self-service)
                 </h2>
 
@@ -102,12 +118,12 @@ const Selfs = () => {
 
 
                     {/* Right Side: Image */}
-                    <div className="w-full lg:w-5/12 xl:w-2/5 mt-8 lg:mt-0">
+                    <div className="w-full lg:w-5/12 xl:w-2/5 mt-8 mb-6 lg:mt-0 lg:mb-0">
                         <div className="lg:sticky lg:top-12">
                             <Image
                                 src={Pic30}
                                 alt="Students studying together"
-                                className="w-full h-[460px] md:h-[500px] lg:h-[720px] object-cover rounded-2xl shadow-xl"
+                                className="w-full  h-[460px] md:h-[500px] lg:h-[720px] object-cover rounded-2xl shadow-xl"
                                 priority
                             />
                         </div>

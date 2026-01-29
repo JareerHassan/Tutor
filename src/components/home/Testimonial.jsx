@@ -35,7 +35,15 @@ const Testimonials = () => {
             <div className="max-w-7xl mx-auto text-center">
                 {/* Header Section */}
                 <div className="mb-16">
-                    <h2 className="text-3xl md:text-5xl font-semibold text-[#1e293b] mb-4">Testimonials</h2>
+                      <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+">Testimonials</h2>
                     <p className="text-gray-500 text-lg">How People are talking about Us</p>
                 </div>
 

@@ -78,7 +78,15 @@ const FeaturesAndWork = () => {
       {/* --- SECTION 2: HOW IT WORKS --- */}
       <div className=" mx-auto  px-4 sm:px-6 lg:px-10 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-semibold text-gray-900 mb-3 tracking-tight">How it Works</h2>
+     <h2 className="
+  text-2xl 
+  sm:text-3xl 
+  md:text-4xl 
+  font-semibold 
+  text-gray-900 
+  mb-2 
+  md:mb-3 
+">How it Works</h2>
           <p className="text-gray-500 text-sm md:text-base font-medium">
             Connecting with tutors who care and support made easy.
           </p>
@@ -195,8 +203,8 @@ const FeaturesAndWork = () => {
       </div>
 
       {/* --- SECTION 3: BIG SALE BANNER --- */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <div className="relative rounded-3xl p-8 md:p-12 overflow-hidden shadow-xl h-[400px]">
+      <div className="mb-5">
+        <div className="relative  p-8 md:p-12 overflow-hidden shadow-xl h-[400px]">
 
           {/* Background Image */}
           <div className="absolute inset-0">
@@ -208,7 +216,7 @@ const FeaturesAndWork = () => {
               priority
             />
             {/* Overlay for text readability */}
-            <div className="absolute inset-0 bg-black/50 rounded-xl"></div>
+            <div className="absolute inset-0 bg-black/50 "></div>
           </div>
 
           {/* Content */}

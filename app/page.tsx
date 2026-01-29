@@ -16,7 +16,7 @@ export default function Home() {
       <Tutors />
       <Selfs />
       <Crousals />
-   <Testimonials />
+      <Testimonials />
     </div>
   );
 }

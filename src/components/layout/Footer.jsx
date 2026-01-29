@@ -27,15 +27,16 @@ const Foter = () => {
                             <Image
                                 src={logo2}
                                 alt="Logo Part 2"
-                                width={120}
+                                width={150}
                                 height={60}
                                 className="object-contain"
                             />
                         </Link>
                     </div>
-                    <p className="text-lg font-semibold leading-tight max-w-xs mb-6 pt-4">
+                    <p className="text-lg font-semibold max-w-xs mb-6 pt-4 tracking-wide">
                         America's Trusted Platform for Tutors who Care and Support
                     </p>
+
                     <div className="flex gap-4">
                         <SocialIcon icon={<FaFacebookF />} />
                         <SocialIcon icon={<FaInstagram />} />
@@ -95,7 +96,7 @@ const Foter = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white">
+            <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 hover:text-white transition">
                 <p>Copyright © Brightway Consult & HR/Recruiting Solutions LLC. All rights reserved.</p>
                 <div className="flex gap-6 mt-4 md:mt-0">
                     <a href="#" className="hover:underline">Terms</a>
