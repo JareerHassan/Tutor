@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // Image component import kiya hai
-import { Menu, X, ChevronDown, User, Briefcase, GraduationCap, Heart } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X, ChevronDown, User, Briefcase, GraduationCap, Heart, BookOpen } from 'lucide-react';
 import logo1 from "../../../public/assets/logo-1.png"
 import logo2 from "../../../public/assets/logo-2.png"
 import Icon from "../../../public/assets/icon.png"
@@ -14,7 +14,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Post Jobs', href: '#' },
     { name: 'Browse Jobs', href: '#' },
-    { name: 'Find Tutor', href: '#' },
+    { name: 'Find Tutor', href: '/findtutor' },
     { name: 'Find Tutor Care', href: '#', hasDropdown: true },
     { name: 'Homework Assist', href: '#' },
     { name: 'SAT Prep', href: '#' },
@@ -22,11 +22,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#FFFFFF]  sticky top-0 z-50 font-sans">
+    <nav className="bg-[#FFFFFF] sticky top-0 z-50 font-sans border-b border-gray-50 font-test">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
 
-          {/* 1. Logo Section (Images adjusted here) */}
+          {/* 1. Logo Section */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-1">
               <Image
@@ -48,16 +48,46 @@ const Navbar = () => {
 
           {/* 2. Desktop Menu (Center) */}
           <div className="hidden lg:flex space-x-2 items-center">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-black hover:text-[#FF1200] px-2 py-2 text-[13px] font-medium flex items-center gap-1 transition-all"
-              >
-                {link.name}
-                {link.hasDropdown && <ChevronDown size={12} className="opacity-60" />}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.hasDropdown ? (
+                /* Wrapper relative div taake dropdown sahi position ho */
+                <div key={link.name} className="relative">
+                  <button
+                    onClick={() => setUserDropdown(!userDropdown)}
+                    className="text-black hover:text-[#FF1200] px-2 py-2 text-[13px] font-medium flex items-center gap-1"
+                  >
+                    {link.name}
+                    <ChevronDown size={12} className={`transition-transform ${userDropdown ? 'rotate-180' : ''}`} />
+                  </button>
+
+                  {/* Dropdown menu adjusted with top-full */}
+                  {userDropdown && (
+                    <div className="absolute left-0 top-full mt-1 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 z-50 overflow-hidden ring-1 ring-black ring-opacity-5 font-test">
+                      <Link href="/tutorcare" className="flex items-center px-4 py-2  text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 border-b border-gray-50 transition-colors">
+                        <GraduationCap size={16} /> Tutor Care
+                      </Link>
+                        <Link href="/justcare" className="flex items-center px-4 py-2  text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 border-b border-gray-50 transition-colors">
+                        <BookOpen size={16} /> Just Care
+                      </Link>
+                      <Link href="/tutorsitter" className="flex items-center px-4 py-2 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 border-b border-gray-50 transition-colors">
+                        <Heart size={16} /> Tutor Sitter
+                      </Link>
+                      <Link href="#" className="flex items-center px-4 py-2 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 transition-colors">
+                        <Briefcase size={16} /> Just Sitter
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-black hover:text-[#FF1200] px-2 py-2 text-[13px] font-medium"
+                >
+                  {link.name}
+                </Link>
+              )
+            )}
           </div>
 
           {/* 3. Right Side: Button & User Icon */}
@@ -73,26 +103,12 @@ const Navbar = () => {
               >
                 <Image
                   src={Icon}
-                  alt="Logo Part 1"
+                  alt="User Icon"
                   width={24}
                   height={24}
                   className="object-contain"
                 />
               </button>
-
-              {userDropdown && (
-                <div className="absolute right-0 mt-3 w-48 bg-white border border-gray-100 rounded-xl shadow-xl py-2 z-50 overflow-hidden ring-1 ring-black ring-opacity-5">
-                  <Link href="#" className="flex items-center px-4 py-2 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 border-b border-gray-50 transition-colors">
-                    <GraduationCap size={16} /> Tutor Care
-                  </Link>
-                  <Link href="#" className="flex items-center px-4 py-2 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 border-b border-gray-50 transition-colors">
-                    <Heart size={16} /> Tutor Sitter
-                  </Link>
-                  <Link href="#" className="flex items-center px-4 py-2 text-[13px] text-gray-700 hover:bg-gray-50 hover:text-[#FF1200] gap-2 transition-colors">
-                    <Briefcase size={16} /> Just Sitter
-                  </Link>
-                </div>
-              )}
             </div>
 
             <div className="lg:hidden">

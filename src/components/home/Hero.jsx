@@ -44,7 +44,7 @@ const HeroSection = () => {
             </h1>
 
 
-            <p className="text-gray-400 text-sm md:text-base max-w-lg mb-8 leading-relaxed">
+            <p className="text-[#00000099] text-sm md:text-base max-w-lg mb-8 leading-relaxed">
               Connecting students and parents with tutors who care, support, and inspire on one safe, secure platform enriched with modern technologies and AI tools to support meaningful learning.
             </p>
 
@@ -118,7 +118,7 @@ const HeroSection = () => {
 
             {/* Apps */}
             <div className="flex gap-3 mt-8">
-              <Image src={Pic1} alt="Play Store" width={160} height={40} className="object-contain" />
+              <Image src={Pic1} alt="Play Store" width={180} height={50} className="object-contain" />
             </div>
           </div>
 

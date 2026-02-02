@@ -35,3 +35,9 @@ body {
 
   background: linear-gradient(190deg, rgba(178, 139, 85, 0.8) 0%, rgba(202, 183, 157, 0.8) 100%);
 }
+
+/* DEBUG: agar ye apply ho jaye to font working hai */
+.font-test {
+  font-family: var(--font-poppins), system-ui, sans-serif;
+
+}

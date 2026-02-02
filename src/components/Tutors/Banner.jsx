@@ -29,13 +29,13 @@ const testimonials = [
     },
 ];
 
-const Testimonials = () => {
+const BanerPage = () => {
     return (
-        <section className="py-12 px-6 bg-white overflow-hidden">
+        <section className=" px-6 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto text-center">
                 {/* Header Section */}
                 <div className="mb-16">
-                      <h2 className="
+                    <h2 className="
   text-2xl 
   sm:text-3xl 
   md:text-4xl 
@@ -91,17 +91,17 @@ const Testimonials = () => {
                     ))}
                 </div>
             </div>
-            
-<div className="max-w-7xl py-12">
-  <div
-    className="relative roots rounded-3xl p-8 md:p-12 overflow-hidden shadow-xl h-[350px] md:h-[400px] flex items-center justify-center"
-    style={{
-      backgroundImage: `url(${Pic22.src})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}
-  >
-    {/* Overlay dark layer */}
+
+            <div className="max-w-7xl py-12">
+                <div
+                    className="relative roots rounded-3xl p-8 md:p-12 overflow-hidden shadow-xl h-[350px] md:h-[400px] flex items-center justify-center"
+                    style={{
+                        backgroundImage: `url(${Pic22.src})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                    }}
+                >
+                    {/* Overlay dark layer */}
 <div
   className="absolute inset-0 rounded-3xl"
   style={{
@@ -109,22 +109,21 @@ const Testimonials = () => {
   }}
 ></div>
 
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col justify-center items-center h-full gap-4 text-center w-full max-w-2xl px-4">
+                        <h2 className="text-2xl md:text-4xl font-semibold text-white leading-tight">
+                            Are you ready to get started? Subscribe Our Newsletter
+                        </h2>
 
-    {/* Content */}
-    <div className="relative z-10 flex flex-col justify-center items-center h-full gap-4 text-center w-full max-w-2xl px-4">
-      <h2 className="text-2xl md:text-4xl font-semibold text-white leading-tight">
-       Are you ready to get started? Subscribe Our Newsletter
-      </h2>
 
-
-      {/* Input + Button Flex Container */}
-      <div className="w-full flex flex-col md:flex-row items-center gap-4 mt-2">
-        <input
-          type="email"
-          placeholder="Enter Email"
-          className="flex-1 px-4 py-3 rounded-full border-2 border-white text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition-all"
-        />
-        <button className="
+                        {/* Input + Button Flex Container */}
+                        <div className="w-full flex flex-col md:flex-row items-center gap-4 mt-2">
+                            <input
+                                type="email"
+                                placeholder="Enter Email"
+                                className="flex-1 px-4 py-3 rounded-full border-2 border-white text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-white focus:border-white transition-all"
+                            />
+                            <button className="
           bg-white 
           text-black 
           px-8 py-3 
@@ -135,15 +134,15 @@ const Testimonials = () => {
           hover:scale-105 
           transition-all duration-300
         ">
-        Submit
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     )
 }
 
-export default Testimonials;
+export default BanerPage;

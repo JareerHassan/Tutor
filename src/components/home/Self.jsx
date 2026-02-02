@@ -52,7 +52,7 @@ const Selfs = () => {
         <>
             <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-sans">
                 {/* Main Heading */}
-                  <h2 className="
+                <h2 className="
   text-2xl 
   sm:text-3xl 
   md:text-4xl 
@@ -102,7 +102,7 @@ const Selfs = () => {
 
             <section className="bg-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 font-sans">
                 {/* Main Heading */}
-                  <h2 className="
+                <h2 className="
   text-2xl 
   sm:text-3xl 
   md:text-4xl 
